@@ -1,9 +1,9 @@
-pipeline {
+pipeline{
     agent any
     stages{
-        stage("Buildin"){
+        stage("buildin"){
             steps{
-                echo "Building the project"
+                echo "building the project"
             }
         }
         post{
