@@ -8,7 +8,7 @@ pipeline{
         }
         post{
             success{
-                emailext body: 'email sent out from the jenkins', subject: 'Test Email', to: 'ynareshbabu1991@gmail.com'
+                mail to:"ynareshbabu1991@gmail.com", subject:"SUCCESS: ${currentBuild.fullDisplayName}", body: "Yay, we passed."
             }
         }
     }
